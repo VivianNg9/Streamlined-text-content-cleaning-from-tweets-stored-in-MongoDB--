@@ -31,13 +31,10 @@ Calculate the number of movies released by each production company for each year
      
 ![Extraction](https://github.com/VivianNg9/Streamlined-text-content-cleaning-from-tweets-stored-in-MongoDB--/blob/main/image%20/2.png)
 
+**Use mrjob to calculate the frequency of each `<year, company>` pair.**
 
-- **Steps:**
-  1. **Data Retrieval:** Access 'movie -> date' to get release dates and extract the release year.
-  2. **Company Identification:** Identify the top three production companies from 'movie -> companies'.
-  3. **Data Formatting:** Create `<year, company>` pairs.
-  4. **Data Storage:** Store these pairs in `year_and_company.txt`.
-  5. **MapReduce Implementation:** Use mrjob to calculate the frequency of each `<year, company>` pair.
+![Count](https://github.com/VivianNg9/Streamlined-text-content-cleaning-from-tweets-stored-in-MongoDB--/blob/main/image%20/Count.png)
+
 
 ### Task 2: Sorting Algorithms Implementation 
 - **Objective:** Implement Merge Sort and Bucket Sort algorithms using MapReduce to sort the results from Task 1.
