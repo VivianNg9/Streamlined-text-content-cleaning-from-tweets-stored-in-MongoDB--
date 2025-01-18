@@ -4,10 +4,10 @@
 Using MapReduce paradigms to process and analyze a large movie dataset, revealing trends in movie production by year and company. The workflow incorporates MongoDB for data storage and mrjob for MapReduce implementation, enabling scalable data processing and sorting.
 
 
-## __<center>Datasets</center>__
+## __<center>Dataset</center>__
 - [`movies.zip`](https://github.com/VivianNg9/Data-Mining/blob/main/MapReduce/movies.json): Contains the movie dataset used for analysis. It includes data such as release dates and production companies.
   
-![MongoDB](https://github.com/VivianNg9/Streamlined-text-content-cleaning-from-tweets-stored-in-MongoDB--/blob/main/image%20/1.png)
+![MongoDB](https://github.com/VivianNg9/Streamlined-text-content-cleaning-from-tweets-stored-in-MongoDB--/blob/main/image%20/MongoDB.png)
 
 
 ## __<center>Project Environment</center>__
@@ -21,9 +21,10 @@ Using MapReduce paradigms to process and analyze a large movie dataset, revealin
 ### Task 1: Movie Count by Production Company and Year  
 Calculate the number of movies released by each production company for each year.
   
-![Workflow1](https://github.com/VivianNg9/Streamlined-text-content-cleaning-from-tweets-stored-in-MongoDB--/blob/main/image%20/workflow%20task1.png)
+![Workflow1](https://github.com/VivianNg9/Streamlined-text-content-cleaning-from-tweets-stored-in-MongoDB--/blob/main/image%20/workflow1.png)
 
 **EXTRACTION:** 
+
 Using pymongo to extract <year, company> for each movie.
   1. **Data Retrieval:** Access 'movie -> date' to get release dates and extract the release year.
   2. **Company Identification:** Identify the top three production companies from 'movie -> companies'.
@@ -72,6 +73,7 @@ if __name__ == "__main__":
 Implement the Merge Sort1 algorithm and the Bucket Sort2 algorithm using two MapReduce programs, to sort results of Task 1.
 
 **MERGE SORT:** 
+
 Sort `<year, company>` pairs in ascending order. 
 
 ![Merge sort](https://github.com/VivianNg9/Streamlined-text-content-cleaning-from-tweets-stored-in-MongoDB--/blob/main/image%20/Workflow_Mergesort.png)
@@ -138,6 +140,7 @@ if __name__ == '__main__':
 ```
 
 **BUCKET SORT:** 
+
 Sort `<year, company>` pairs in descending order.
 
 ![Bucket sort](https://github.com/VivianNg9/Streamlined-text-content-cleaning-from-tweets-stored-in-MongoDB--/blob/main/image%20/Workflow_Bucketsort.png)
