@@ -35,6 +35,20 @@ Using pymongo to extract <year, company> for each movie.
 **COUNT:** 
 Use mrjob to calculate the frequency of each `<year, company>` pair. Output stored in [`task1_output.txt`](https://github.com/VivianNg9/Data-Mining/blob/main/MapReduce/Output%20file%20for%20Task%201/task1_output.txt)
 
+```python
+from mrjob.job import MRJob                                     
+
+class MRWordCount(MRJob):
+    def mapper(self, _, line):
+        yield line, 1
+
+    def reducer(self, year_company, count):
+        yield year_company, sum(count)
+
+if __name__ == "__main__":
+    MRWordCount.run()
+```
+
 ![Count](https://github.com/VivianNg9/Streamlined-text-content-cleaning-from-tweets-stored-in-MongoDB--/blob/main/image%20/Count.png)
 
 
@@ -50,10 +64,6 @@ Output stored in [`task2_mergesort.txt`](https://github.com/VivianNg9/Data-Minin
 
 ## Example Code
 Here is an example of the function used in Task 1:
-
-```python
-def mapper(self, _, line):
-    yield line, 1```
 
 
 
