@@ -30,7 +30,24 @@ Using pymongo to extract <year, company> for each movie.
   3. **Data Formatting:** Create `<year, company>` pairs.
   4. **Data Storage:** Store these pairs in [`year_and_company.txt`](https://github.com/VivianNg9/Data-Mining/blob/main/MapReduce/Output%20file%20for%20Task%201/year_and_company.txt).
      
-![Extraction](https://github.com/VivianNg9/Streamlined-text-content-cleaning-from-tweets-stored-in-MongoDB--/blob/main/image%20/2.png)
+```python
+from pymongo import MongoClient                                                                                                   
+
+# Making database connection
+client = MongoClient('localhost', 27017)
+db = client["assignment1"]
+col = db["movies"]
+cur = col.find() 
+
+# Write a txt file with <year, company> pairs of all movies 
+file = open("year_and_company.txt", "w")
+# Loop through each movie document in the cur
+for movie in cur: 
+    for i in range(min(len(movie['companies']), 3)):
+        year_company = movie['date'][-4:] + " , " + movie['companies'][i]['name']+ '\n'
+    file.write(year_company)  
+file.close()
+```
 
 **COUNT:** 
 Use mrjob to calculate the frequency of each `<year, company>` pair. Output stored in [`task1_output.txt`](https://github.com/VivianNg9/Data-Mining/blob/main/MapReduce/Output%20file%20for%20Task%201/task1_output.txt)
@@ -48,8 +65,6 @@ class MRWordCount(MRJob):
 if __name__ == "__main__":
     MRWordCount.run()
 ```
-
-![Count](https://github.com/VivianNg9/Streamlined-text-content-cleaning-from-tweets-stored-in-MongoDB--/blob/main/image%20/Count.png)
 
 
 ### Task 2: Sorting Algorithms Implementation 
