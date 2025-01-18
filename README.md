@@ -1,15 +1,19 @@
-# __<center>MapReduce Project</center>__
+# __<center>Streamlined text content cleaning from tweets stored in MongoDB</center>__
 
 ## __<center>Overview</center>__
-This project focuses on the application of MapReduce paradigms for processing and analyzing a large movie dataset.
+Using MapReduce paradigms to process and analyze a large movie dataset, revealing trends in movie production by year and company. The workflow incorporates MongoDB for data storage and mrjob for MapReduce implementation, enabling scalable data processing and sorting.
+
 
 ## __<center>Datasets</center>__
-- [`movies.zip`](https://github.com/VivianNg9/Data-Mining/blob/main/MapReduce/movies.json): Contains the movies dataset, which is used for all tasks in this project.
+- [`movies.zip`](https://github.com/VivianNg9/Data-Mining/blob/main/MapReduce/movies.json): Contains the movie dataset used for analysis. It includes data such as release dates and production companies.
+![Workflow Diagram](https://github.com/VivianNg9/Streamlined-text-content-cleaning-from-tweets-stored-in-MongoDB--/blob/main/image%20/1.png)
 
-## __<center>Environment</center>__
-- **MongoDB & Studio 3T:** For database creation and dataset importation.
+
+## __<center>Project Environment</center>__
+- **MongoDB & Studio 3T:** Used for database creation and dataset importation.
 - **pymongo:** To connect to MongoDB and extract document data.
-- **mrjob:** Framework for implementing MapReduce programs.
+- **mrjob:** Framework for implementing MapReduce programs in Python.
+
 
 ## __<center>Details</center>__
 
