@@ -22,6 +22,13 @@ Using MapReduce paradigms to process and analyze a large movie dataset, revealin
 - **Objective:** Calculate the number of movies released by each production company for each year.
 ![Workflow1](https://github.com/VivianNg9/Streamlined-text-content-cleaning-from-tweets-stored-in-MongoDB--/blob/main/image%20/workflow%20task1.png)
 
+- **Using pymongo to extract <year, company> for each movie**
+  1. **Data Retrieval:** Access 'movie -> date' to get release dates and extract the release year.
+  2. **Company Identification:** Identify the top three production companies from 'movie -> companies'.
+  3. **Data Formatting:** Create `<year, company>` pairs.
+  4. **Data Storage:** Store these pairs in `year_and_company.txt`.
+     
+![Extraction](https://github.com/VivianNg9/Streamlined-text-content-cleaning-from-tweets-stored-in-MongoDB--/blob/main/image%20/2.png)
 
 
 - **Steps:**
