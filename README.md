@@ -18,12 +18,12 @@ Using MapReduce paradigms to process and analyze a large movie dataset, revealin
 
 ## __<center>Project Workflow</center>__
 
-### Movie Count by Production Company and Year  
+### Task 1: Movie Count by Production Company and Year  
 Calculate the number of movies released by each production company for each year.
   
 ![Workflow1](https://github.com/VivianNg9/Streamlined-text-content-cleaning-from-tweets-stored-in-MongoDB--/blob/main/image%20/workflow%20task1.png)
 
-**Using pymongo to extract <year, company> for each movie**
+**EXTRACTION: Using pymongo to extract <year, company> for each movie**
   1. **Data Retrieval:** Access 'movie -> date' to get release dates and extract the release year.
   2. **Company Identification:** Identify the top three production companies from 'movie -> companies'.
   3. **Data Formatting:** Create `<year, company>` pairs.
@@ -31,13 +31,14 @@ Calculate the number of movies released by each production company for each year
      
 ![Extraction](https://github.com/VivianNg9/Streamlined-text-content-cleaning-from-tweets-stored-in-MongoDB--/blob/main/image%20/2.png)
 
-**Use mrjob to calculate the frequency of each `<year, company>` pair.**
+**COUNT: Use mrjob to calculate the frequency of each `<year, company>` pair.**
 
 ![Count](https://github.com/VivianNg9/Streamlined-text-content-cleaning-from-tweets-stored-in-MongoDB--/blob/main/image%20/Count.png)
 
 
 ### Task 2: Sorting Algorithms Implementation 
-- **Objective:** Implement Merge Sort and Bucket Sort algorithms using MapReduce to sort the results from Task 1.
+Implement Merge Sort and Bucket Sort algorithms using MapReduce to sort the results from Task 1.
+
   - **Merge Sort:** Sort `<year, company>` pairs in ascending order. Output stored in `task2_mergesort_output.txt`.
   - **Bucket Sort:** Sort `<year, company>` pairs in descending order. Output stored in `task2_bucketsort_output.txt`.
 
