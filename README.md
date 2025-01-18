@@ -19,7 +19,7 @@ Using MapReduce paradigms to process and analyze a large movie dataset, revealin
 
 ### Movie Count by Production Company and Year 
 - **Objective:** Calculate the number of movies released by each production company for each year.
-![Workflow1](h[ttps://github.com/VivianNg9/Streamlined-text-content-cleaning-from-tweets-stored-in-MongoDB--/blob/main/image%20/1.png](https://github.com/VivianNg9/Streamlined-text-content-cleaning-from-tweets-stored-in-MongoDB--/blob/main/image%20/workflow%20task1.png))
+![Workflow1]([ttps://github.com/VivianNg9/Streamlined-text-content-cleaning-from-tweets-stored-in-MongoDB--/blob/main/image%20/1.png](https://github.com/VivianNg9/Streamlined-text-content-cleaning-from-tweets-stored-in-MongoDB--/blob/main/image%20/workflow%20task1.png))
 
 
 
