@@ -7,7 +7,7 @@ Using MapReduce paradigms to process and analyze a large movie dataset, revealin
 ## __<center>Datasets</center>__
 - [`movies.zip`](https://github.com/VivianNg9/Data-Mining/blob/main/MapReduce/movies.json): Contains the movie dataset used for analysis. It includes data such as release dates and production companies.
   
-![MongoDB](https://github.com/VivianNg9/Streamlined-text-content-cleaning-from-tweets-stored-in-MongoDB--/blob/main/image%20/1.png)
+![MongoDB](https://github.com/VivianNg9/Streamlined-text-content-cleaning-from-tweets-stored-in-MongoDB--/blob/main/image%20/MongoDB.png)
 
 
 ## __<center>Project Environment</center>__
