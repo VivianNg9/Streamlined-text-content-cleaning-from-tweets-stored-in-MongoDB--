@@ -73,6 +73,7 @@ if __name__ == "__main__":
 Implement the Merge Sort1 algorithm and the Bucket Sort2 algorithm using two MapReduce programs, to sort results of Task 1.
 
 **MERGE SORT:** 
+
 Sort `<year, company>` pairs in ascending order. 
 
 ![Merge sort](https://github.com/VivianNg9/Streamlined-text-content-cleaning-from-tweets-stored-in-MongoDB--/blob/main/image%20/Workflow_Mergesort.png)
@@ -139,6 +140,7 @@ if __name__ == '__main__':
 ```
 
 **BUCKET SORT:** 
+
 Sort `<year, company>` pairs in descending order.
 
 ![Bucket sort](https://github.com/VivianNg9/Streamlined-text-content-cleaning-from-tweets-stored-in-MongoDB--/blob/main/image%20/Workflow_Bucketsort.png)
