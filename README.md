@@ -48,6 +48,12 @@ Sort `<year, company>` pairs in ascending order.
 
 Output stored in [`task2_mergesort.txt`](https://github.com/VivianNg9/Data-Mining/blob/main/MapReduce/Output%20file%20for%20Task%202/task2_mergesort_output.txt)
 
+## Example Code
+Here is an example of the function used in Task 1:
+
+```python
+def mapper(self, _, line):
+    yield line, 1
 
 
 
