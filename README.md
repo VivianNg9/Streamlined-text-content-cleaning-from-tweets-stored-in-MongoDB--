@@ -6,7 +6,8 @@ Using MapReduce paradigms to process and analyze a large movie dataset, revealin
 
 ## __<center>Datasets</center>__
 - [`movies.zip`](https://github.com/VivianNg9/Data-Mining/blob/main/MapReduce/movies.json): Contains the movie dataset used for analysis. It includes data such as release dates and production companies.
-![Workflow Diagram](https://github.com/VivianNg9/Streamlined-text-content-cleaning-from-tweets-stored-in-MongoDB--/blob/main/image%20/1.png)
+  
+![MongoDB](https://github.com/VivianNg9/Streamlined-text-content-cleaning-from-tweets-stored-in-MongoDB--/blob/main/image%20/1.png)
 
 
 ## __<center>Project Environment</center>__
@@ -15,10 +16,21 @@ Using MapReduce paradigms to process and analyze a large movie dataset, revealin
 - **mrjob:** Framework for implementing MapReduce programs in Python.
 
 
-## __<center>Details</center>__
+## __<center>Project Workflow</center>__
 
-### Task 1: Movie Count by Production Company and Year 
-- **Objective:** Calculate the number of movies released by each production company for every year.
+### Movie Count by Production Company and Year 
+- **Objective:** Calculate the number of movies released by each production company for each year.
+![Workflow1](https://github.com/VivianNg9/Streamlined-text-content-cleaning-from-tweets-stored-in-MongoDB--/blob/main/image%20/workflow%20task1.png)
+
+- **Using pymongo to extract <year, company> for each movie**
+  1. **Data Retrieval:** Access 'movie -> date' to get release dates and extract the release year.
+  2. **Company Identification:** Identify the top three production companies from 'movie -> companies'.
+  3. **Data Formatting:** Create `<year, company>` pairs.
+  4. **Data Storage:** Store these pairs in `year_and_company.txt`.
+     
+![Extraction](https://github.com/VivianNg9/Streamlined-text-content-cleaning-from-tweets-stored-in-MongoDB--/blob/main/image%20/2.png)
+
+
 - **Steps:**
   1. **Data Retrieval:** Access 'movie -> date' to get release dates and extract the release year.
   2. **Company Identification:** Identify the top three production companies from 'movie -> companies'.
