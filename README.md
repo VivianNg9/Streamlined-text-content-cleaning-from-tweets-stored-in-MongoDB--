@@ -21,7 +21,7 @@ Using MapReduce paradigms to process and analyze a large movie dataset, revealin
 ### Task 1: Movie Count by Production Company and Year  
 Calculate the number of movies released by each production company for each year.
   
-![Workflow1](https://github.com/VivianNg9/Streamlined-text-content-cleaning-from-tweets-stored-in-MongoDB--/blob/main/image%20/workflow%20task1.png)
+![Workflow1](https://github.com/VivianNg9/Streamlined-text-content-cleaning-from-tweets-stored-in-MongoDB--/blob/main/image%20/workflow1.png)
 
 **EXTRACTION:** 
 Using pymongo to extract <year, company> for each movie.
