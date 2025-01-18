@@ -53,7 +53,7 @@ Here is an example of the function used in Task 1:
 
 ```python
 def mapper(self, _, line):
-    yield line, 1
+    yield line, 1```
 
 
 
