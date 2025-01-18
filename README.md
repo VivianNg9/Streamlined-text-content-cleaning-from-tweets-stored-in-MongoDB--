@@ -50,6 +50,7 @@ file.close()
 ```
 
 **COUNT:** 
+
 Use mrjob to calculate the frequency of each `<year, company>` pair. Output stored in [`task1_output.txt`](https://github.com/VivianNg9/Data-Mining/blob/main/MapReduce/Output%20file%20for%20Task%201/task1_output.txt)
 
 ```python
@@ -138,6 +139,7 @@ if __name__ == '__main__':
 
 **BUCKET SORT:** 
 Sort `<year, company>` pairs in descending order.
+
 ![Bucket sort](https://github.com/VivianNg9/Streamlined-text-content-cleaning-from-tweets-stored-in-MongoDB--/blob/main/image%20/Workflow_Bucketsort.png)
 
 Output stored in [`task2_bucketsort_output.txt`](https://github.com/VivianNg9/Data-Mining/blob/main/MapReduce/Output%20file%20for%20Task%202/task2_bucketsort_output.txt)
